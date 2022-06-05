@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
+
+    
+
+    <title>Expenses chart component</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <p class="header_balance">My balance</p>
+                <p class="header_balance_value">$921.48</p>
+            </div>
+                
+            <img class="a" src="./images/logo.svg" width="40" height="40" alt="">
+        </div>
+
+        <div class="section">
+            <p class="section_title"><b>Spending - Last 7 days</b></p>
+
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+            <hr style="opacity: 0.2; margin: 15px 0;">
+            <div class="section_footer">
+              <div class="section_footer_total">
+                <p class="total_txt">Total this month</p>
+                <p class="total_balance"><b>$478.33</b></p>
+              </div>
+              <div class="section_footer_difference">
+                            <p class="difference_percent"><b>+2.4%</b></p>
+                            <p class="difference_when">from last month</p>
+            
+          </div>
+          
+          </div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
